@@ -1,3 +1,3 @@
-import { start1 } from "./Arrays/1-introdução.mjs";
+import { start1 } from "./Arrays/1-add-&-remover.mjs";
 
-start1()
+start1();
