@@ -82,14 +82,15 @@ export function start1() {
     logComment("LEMBRE-SE: O slice retorna uma nova array, mas não muda sua variável com a array atual, ou seja, será necessário fazer o comando \"array = array.slice()\" para que sua variável mude");
 
     // splice
-    logSubtitle(`O ${chalk.bold(".splice")} cria uma array com parte dela substituída por novos elementos. Seus parâmetros são índices da array, que representam o ${chalk.bold("início")} e ${chalk.bold("fim")} da ${chalk.bold("parte que será substituída")}, seguidos pelos ${chalk.bold("novos elementos")}.`);
+    logSubtitle(`O ${chalk.bold(".splice")} cria uma array com parte dela substituída por novos elementos. Seus parâmetros são um índice que representa o ${chalk.bold("início")} do splice, a quantidade de ${chalk.bold("elementos a serem deletados")} começando por esse índice e indo até a direção do fim da array e os ${chalk.bold("novos elementos")} que serão adicionados.`);
 
     logComment("Antes do splice");
     numeros = [0, 1, 2, 3];
     console.log(numeros);
 
     logComment("Depois do splice [Parâmetros: (1, 2, \"Sumiu\")]");
-    numeros.splice(2, 4, "Sumiu");
+    numeros.splice(1, 2, "Sumiu");
     console.log(numeros);
     logComment("DICA: O splice retorna os itens removidos da sua array (\"itensRemovidos = array.splice()\")");
+    logComment("DICA 2: O splice pode ser usado para escolher onde adicionar um novo item na array (\"array.splice(2, 0, \"Olá\")\" adiciona a string \"Olá\" no índice 2, sem remover nenhum elemento.)");
 }
