@@ -104,5 +104,5 @@ numeros.splice(1, 2, "Sumiu");
 console.log(numeros);
 // Saída: [ 0, 'Sumiu', 3 ]
 ```
-**DICA 1:** *O splice retorna os itens removidos da sua array ("itensRemovidos = array.splice()")*
-**DICA 2:** *O splice pode ser usado para escolher onde adicionar um novo item na array ("array.splice(2, 0, "Olá")" adiciona a string "Olá" no índice 2, sem remover nenhum elemento.)*
+- **DICA 1:** *O splice retorna os itens removidos da sua array (`itensRemovidos = array.splice()` faz com que `itensRemovidos` armazene os itens que foram removidos pelo splice)*
+- **DICA 2:** *O splice pode ser usado para escolher onde adicionar um novo item na array (`array.splice(2, 0, "Olá")` adiciona a string `"Olá"` no índice 3, sem remover nenhum elemento.*
